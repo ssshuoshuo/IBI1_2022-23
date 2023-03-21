@@ -10,3 +10,14 @@ if d > e:
     print("Rob travelled further to Los Angeles")
 else:
     print("Rob travelled further to Haining")
+
+
+
+X = True
+Y = False
+
+W = X and Y  # W will have the value False
+Z = X or Y  # Z will have the value True
+
+print("The value of W is:", W)  # The value of W is: False
+print("The value of Z is:", Z)  # The value of Z is: Ture
