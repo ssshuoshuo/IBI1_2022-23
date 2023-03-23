@@ -12,8 +12,12 @@ print(movie_genres)
 labels = movie_genres.keys()
 sizes = movie_genres.values()
 
+# choose colors for each pie slice
+colors = {'pink', 'plum', 'paleturquoise', 'hotpink',  'moccasin', 
+'mistyrose', 'turquoise', 'plum', 'aqua', 'greenyellow', 'c'} 
+
 # Plot the pie chart
-plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%')
 
 # set same scale
 plt.axis('equal')
@@ -28,7 +32,7 @@ plt.show()
 requested_genre = 'Comedy'
 
 # Get the number of students who prefer the requested genre from the dictionary
-num_students = movie_dict[requested_genre]
+num_students = movie_genres[requested_genre]
 
 # Print the result
 print(f"The number of university students who prefer {requested_genre} is: {num_students}")
