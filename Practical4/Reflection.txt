@@ -1,0 +1,6 @@
+In this practical practice, I encountered many minor obstacles, such as 
+failure to log in to GitHub, incorrect understanding of the version path, 
+etc., but what bothered me most was that when I carried out "git push" 
+operation, the upload method which always prompted me to enter the account 
+and password could not be used now. After a lot of research, I was able to 
+implement a "git push" by creating a key.
