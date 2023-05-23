@@ -1,16 +1,14 @@
-import os
+Bimport os
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 # 1.importing the .csv file
 os. chdir ("/Users/yaoshuo")
 covid_data=pd.read_csv("full_data.csv")
-# 2.showing the second column from every 100th row from the first 1000 
-rows (inclusive)
+# 2.showing the second column from every 100th row from the first 1000 rows (inclusive)
 print(covid_data.iloc[0:1001:100,1])
 print('******************')
-# 3.used a Boolean to show “total cases” for all rows corresponding to 
-Afghanistan.
+# 3.used a Boolean to show “total cases” for all rows corresponding to Afghanistan.
 
  #Firstly,convert the second column into a list
 my_column=[False,True,False,False,False,False]
@@ -57,12 +55,10 @@ for i in range(0,len(my_list)):
 
 new_data=covid_data.iloc[my_list3,mar_column]
 average_deaths=np.average(new_data.iloc[:,2])
-print ('average number of new deaths is', average_deaths, ".BUT note that 
-the location named 'world' was excluded while calculating!")
+print ('average number of new deaths is', average_deaths, ".BUT note that the location named 'world' was excluded while calculating!")
  #19.061855670103093
 average_cases=np.average(new_data.iloc[:,1])
-print ("average number of new cases is", average_cases,".BUT note that the 
-location named 'world' was excluded while calculating!")
+print ("average number of new cases is", average_cases,".BUT note that the location named 'world' was excluded while calculating!")
  #321.8814432989691
 proportion=average_deaths/average_cases
  #0.059220113700056046
