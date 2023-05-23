@@ -4,8 +4,7 @@ def count_cds_genes(input_file, stop_codon):
     with open(input_file, 'r') as f:
         contents = f.read()
 
-    genes = re.findall(r'>([^\n]+)\n([ACTG\n]+?)' + stop_codon + r'\n', 
-contents)
+    genes = re.findall(r'>([^\n]+)\n([ACTG\n]+?)' + stop_codon + r'\n', contents)
     output_file = stop_codon + '_stop_genes.fa'
 
     with open(output_file, 'w') as f:
