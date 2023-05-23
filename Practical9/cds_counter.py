@@ -6,8 +6,7 @@ def count_coding_sequences(seq):
     coding_sequences = 0
     
     for start_codon in start_codons:
-        start_positions = [m.start() for m in re.finditer(start_codon, 
-seq)]
+        start_positions = [m.start() for m in re.finditer(start_codon, seq)]
         
         for start_pos in start_positions:
             for stop_codon in stop_codons:
